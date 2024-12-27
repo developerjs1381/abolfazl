@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعیت مکانی div</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv"></div>
+
+    <script>
+        let x = "dfkl;s"
+        x = x.trim()
+        let i = 0
+        let myDiv = document.getElementById("myDiv")
+        setInterval(() => {
+            if (i < x.length) {
+                myDiv.textContent += x[i]
+                i++
+            }
+        }, 100)
+    </script>
+
+</body>
+
+</html>
